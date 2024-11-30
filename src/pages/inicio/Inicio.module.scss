@@ -50,3 +50,36 @@
       }
   }
 }
+
+@media (max-width: 768px){
+  .paginaInicial {
+    height: 30vh;
+    padding: none;
+    background-size:150%;
+    justify-content: center;
+
+    h2{
+      font-size: 23px;
+      width: 70%;
+    text-align: center;
+    }
+  }
+
+  .porqueDoarSection {
+    h2{
+      font-size: 23px;
+      text-align: center;
+    }
+  }
+
+  .cardsMotivos {
+    flex-direction: column;
+    align-items: center;
+    width: 180vh;
+
+    p{
+      font-size: 10px;
+      text-align: justify;
+    }
+  }
+}

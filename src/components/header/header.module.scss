@@ -1,4 +1,4 @@
-.header {
+header {
   background: linear-gradient(90deg, #001b2f 0%, #005695 100%);
   display: flex;
   justify-content: space-between;
@@ -69,7 +69,7 @@
   }
 }
 
-@media (max-width: 780px){
+@media (max-width: 768px){
   header {
      flex-direction: column;
      justify-content: space-evenly; 
@@ -83,6 +83,7 @@
   }
   .navHeader {
       width: 95%;
+      
   }
   .barraDeBusca {
       display: none;
