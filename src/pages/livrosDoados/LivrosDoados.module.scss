@@ -13,7 +13,7 @@
 .containerCards {
   width: 95%;
   height: 60vh;
- 
+  
   section {
      border: solid 3px #005695;
      border-radius: 20px;
@@ -23,9 +23,30 @@
      flex-direction: column;
      align-items: center;
      justify-content: space-evenly;
+     
+     img {
+      width: 15vh;
+    }
+     &:hover {
+      background-color: #077fd4;
+      border: none;
+     }
  
      div {
          text-align: center;
      }
+  }
+ }
+
+ @media (max-width: 768px){
+
+  .containerCards {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    
+    section{
+    width: 60%;
+    }
   }
  }

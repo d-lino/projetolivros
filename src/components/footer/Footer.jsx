@@ -9,7 +9,7 @@ export default function Footer(){
     return(
         <footer>
             <section className={s.contatosFooter}>
-                <p>22002-22002</p>
+                <p>4002-8922</p>
                 <nav>
                     <a href=""><img src={logoFacebook} alt="" /></a>
                     <a href=""><img src={logoTwitter} alt="" /></a>

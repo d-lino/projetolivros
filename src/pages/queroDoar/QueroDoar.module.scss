@@ -53,3 +53,20 @@ form {
    border: none;
   }
 }
+
+@media (max-width: 768px){
+  .queroDoar {
+    height: 100vh;
+ 
+  p {
+    font-size: 18px;
+    text-align: center;
+    width: 70%;
+  }
+ }
+ 
+  form {
+    width: 90%;
+    font-size: 14px;
+  }
+ }
