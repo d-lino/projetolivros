@@ -49,13 +49,30 @@
 
  @media (max-width: 768px){
 
+  .LivrosDoadosSection {
+    height: 150vh;
+    border:solid red;
+    h2 {
+      border: solid red;
+      font-size: 23px;
+      margin: none;
+  }
+  }
+
   .containerCards {
+    height: 100vh;
+    border: solid red;
     flex-direction: column;
     display: flex;
     align-items: center;
+    text-align: center;
     
     section{
-    width: 60%;
+    width: 70%;
+
+    img {
+      width: 10vh;
+    }
     }
   }
  }
