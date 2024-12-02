@@ -1,4 +1,5 @@
 import LivroProtagonista from '../../assets/LivroProtagonista.png';
+import livroBanana from '../../assets/livroBanana.png';
 import s from '../livrosDoados/LivrosDoados.module.scss';
 export default function LivrosDoados() {
   return (
@@ -11,6 +12,14 @@ export default function LivrosDoados() {
           <p>Susanne Andrade</p> 
           <p>Ficção</p> 
         </section>
+
+        <section>
+        <img src={livroBanana} alt="Imagem do livro Diário de um banana"/>
+        <h3>Diário de um banana</h3>
+          <p>Jeff Kinney</p> 
+          <p>Comédia</p> 
+        </section>
+
       </section>
     </section>
   );
