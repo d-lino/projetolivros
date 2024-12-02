@@ -4,21 +4,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    margin-top: 25px;
 
     h2 {
         font-size: 32px;
+        margin-bottom: 5px;
     }
 }
 
 .containerCards {
   width: 95%;
   height: 60vh;
+  display:flex;
+  grid-template-columns: repeat;
+  gap: 20px;
+  justify-items: center;
+  align-items: center; 
   
   section {
      border: solid 3px #005695;
      border-radius: 20px;
-     width: 18%;
-     height: 40vh;
+     width: 70%;
+     height: 70%;
      display: flex;
      flex-direction: column;
      align-items: center;

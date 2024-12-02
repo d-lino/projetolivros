@@ -1,5 +1,6 @@
 import LivroProtagonista from '../../assets/LivroProtagonista.png';
-import livroBanana from '../../assets/livroBanana.png';
+import livroBanana from '../../assets/livroBanana.jpg';
+import livroPilgrim from '../../assets/livroPilgrim.jpg';
 import s from '../livrosDoados/LivrosDoados.module.scss';
 export default function LivrosDoados() {
   return (
@@ -14,8 +15,17 @@ export default function LivrosDoados() {
         </section>
 
         <section>
+        <img src={livroPilgrim} alt="Imagem do livro Scott Pilgrim"/>
+        <h3>Scott Pilgrim Contra o Mundo</h3>
+        <h5>Volume 3</h5>
+          <p>Bryan Lee O'malley</p> 
+          <p>Ação</p> 
+        </section>
+
+        <section>
         <img src={livroBanana} alt="Imagem do livro Diário de um banana"/>
         <h3>Diário de um banana</h3>
+        <h5>Volume 1</h5>
           <p>Jeff Kinney</p> 
           <p>Comédia</p> 
         </section>

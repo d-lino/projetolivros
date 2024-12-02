@@ -48,7 +48,10 @@ form {
   background-color: #005695;
   color: #fff;
   cursor: pointer;
+  transition: 0.3s ease, box-shadow 0.3s ease;
   &:hover {
+   transform: translateY(-10px);
+   box-shadow: 0 5px 5px rgba(10, 34, 114, 0.897);
    background-color: #077fd4;
    border: none;
   }
