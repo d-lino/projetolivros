@@ -2,7 +2,22 @@ import LivroProtagonista from '../../assets/LivroProtagonista.png';
 import livroBanana from '../../assets/livroBanana.jpg';
 import livroPilgrim from '../../assets/livroPilgrim.jpg';
 import s from '../livrosDoados/LivrosDoados.module.scss';
+import axios from 'axios';
+import { useState } from 'react';
+import { useEffect } from 'react';
 export default function LivrosDoados() {
+
+  const [livros,setLivros] = useState([])
+    
+    const puxarLivros = async() =>{
+        const resposta = await axios.get("https://api-1-1-nq8g.onrender.com/livros")
+        setLivros(resposta.data)
+    }
+
+    useEffect(()=>{
+        puxarLivros()
+    })
+
   return (
       <section className={s.LivrosDoadosSection}>
       <h2>Livros Doados</h2>
@@ -29,6 +44,18 @@ export default function LivrosDoados() {
           <p>Jeff Kinney</p> 
           <p>Comédia</p> 
         </section>
+
+        
+            {livros.map((item) => (
+                <section>
+                    <div>
+                        <h3>{item.titulo}</h3>
+                        <img src={item.image_url} alt={item.titulo} />
+                    </div>
+                </section>
+            ))}
+
+        
 
       </section>
     </section>
